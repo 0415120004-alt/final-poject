@@ -1,165 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #f0f8ff;
     margin: 0;
     padding: 20px;
-    min-height: 100vh;
 }
 
-.container {
-    max-width: 400px;
+.game-container {
+    max-width: 500px;
     margin: 0 auto;
-    background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
-    border-radius: 20px;
+    background-color: white;
     padding: 30px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border: 3px solid #ff6b9d;
+    border-radius: 10px;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    color: #5a67d8;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 28px;
+    color: #333;
 }
 
-.pet-display {
-    text-align: center;
-    margin-bottom: 30px;
-    background: linear-gradient(45deg, #ffeaa7, #fab1a0);
-    border-radius: 15px;
-    padding: 20px;
-    border: 2px solid #e17055;
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
 }
 
-.pet {
-    font-size: 80px;
-    margin-bottom: 10px;
-    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.2));
-}
-
-#pet-name {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2d3436;
-    margin: 10px 0;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
-}
-
-#status-message {
-    color: #636e72;
-    font-style: italic;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.stats {
-    margin-bottom: 30px;
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    padding: 20px;
-    border-radius: 15px;
-    border: 2px solid #00b894;
-}
-
-.stat {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.stat label {
-    width: 80px;
-    font-weight: bold;
-    color: #2d3436;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-}
-
-.stat-bar {
-    flex: 1;
-    height: 25px;
-    background: linear-gradient(90deg, #ddd 0%, #bbb 100%);
-    border-radius: 15px;
-    margin: 0 10px;
-    border: 2px solid #74b9ff;
-    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.stat-fill {
-    height: 100%;
-    border-radius: 13px;
-    width: 50%;
-    transition: width 0.3s ease;
-}
-
-#hunger-bar {
-    background: linear-gradient(90deg, #fd79a8 0%, #e84393 100%);
-}
-
-#happiness-bar {
-    background: linear-gradient(90deg, #fdcb6e 0%, #e17055 100%);
-}
-
-#energy-bar {
-    background: linear-gradient(90deg, #74b9ff 0%, #0984e3 100%);
-}
-
-.stat span {
-    width: 30px;
-    text-align: center;
-    font-weight: bold;
-    color: #2d3436;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    border: 2px solid #a29bfe;
-}
-
-.buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.buttons button {
-    flex: 1;
-    padding: 18px;
-    font-size: 14px;
-    font-weight: bold;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
     border: none;
-    border-radius: 12px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#feed-btn {
-    background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
-    color: white;
-    border: 3px solid #e17055;
+button:hover {
+    background-color: #45a049;
 }
 
-#play-btn {
-    background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
-    color: white;
-    border: 3px solid #55efc4;
+#feedback {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    min-height: 25px;
 }
 
-#sleep-btn {
-    background: linear-gradient(135deg, #6c5ce7 0%, #5f3dc4 100%);
-    color: white;
-    border: 3px solid #a29bfe;
-}
-
-.buttons button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.buttons button:active {
-    transform: translateY(0px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+#guessCount {
+    font-size: 16px;
+    color: #666;
 }
 
 
