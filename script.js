@@ -8,17 +8,20 @@ function checkGuess() {
     
     if (playerGuess == secretNumber) {
         // Show "You won!" message
-    } else if (playerGuess > secretNumber) {
+    } 
+    
+    else if (playerGuess > secretNumber) {
         // Show "Too high!" message
-    } else {
+    } 
+    
+    else {
         // Show "Too low!" message
     }
 }
 
 }
-document.getElementById("guessInput").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        checkGuess();
+document.getElementById("guessInput").addEventListener("keypress"), function(event) {
+   
 
 // Your variables go here
 let secretNumber = // use Math.random() to pick 1-100
@@ -28,9 +31,10 @@ let numberOfGuesses = // start at 0
 function checkGuess() {
     // Your code will go here
 }
-
+    if (event.key === "Enter") {
+        checkGuess();
 // Connect the button to the function
 // Use addEventListener here
     }
-});
+};
 
