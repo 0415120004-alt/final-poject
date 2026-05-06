@@ -21,20 +21,15 @@ function checkGuess() {
 
 }
 document.getElementById("guessInput").addEventListener("keypress"), function(event) {
-   
 
-// Your variables go here
-let secretNumber = // use Math.random() to pick 1-100
-let numberOfGuesses = // start at 0
+let secretNumber = // use Math.random() to pick 1-100;
+let numberOfGuesses = // start at 0;
 
-// Function to check the guess
 function checkGuess() {
-    // Your code will go here
+    
 }
     if (event.key === "Enter") {
         checkGuess();
-// Connect the button to the function
-// Use addEventListener here
     }
-};
+}
 
